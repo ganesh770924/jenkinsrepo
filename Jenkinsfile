@@ -6,7 +6,8 @@ pipeline{
             dir ("my_dir"){
               git url : "https://github.com/ganesh770924/github-basics.git" , branch : "master"
             }
-        stage('Shell script'){
+           }
+      stage('Shell script'){
           steps {
             sh "cat README.md"
           }
@@ -14,4 +15,4 @@ pipeline{
           }
          }
         } 
-    }
+    
