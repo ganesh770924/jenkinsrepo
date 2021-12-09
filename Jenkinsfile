@@ -5,6 +5,7 @@ pipeline{
       steps{
             dir ("my_dir"){
               git url : "https://github.com/ganesh770924/github-basics.git" , branch : "master"
+              sh 'cat "{$WORKSPACE}"/README.md'
             }
            }
           }
