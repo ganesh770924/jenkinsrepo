@@ -8,12 +8,7 @@ pipeline{
             }
            }
           }
-     stage('Shell script'){
-          steps {
-            sh "cat README.md"
-          }
-           }        
-          }
+         }
         }
-        } 
+         
     
